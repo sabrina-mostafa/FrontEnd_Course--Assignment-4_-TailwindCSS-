@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>genZfashion-tailwindcss</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .bebas-neue-regular {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="pb-[3%]">
+        <nav class=" bg-[#FFFBF0] shadow-[0_0px_30px_-20px_#3E3E3E] w-[100%] h-[4.9rem] flex md:justify-center justify-between md:px-[0px] px-[2rem] lg:gap-[8vw] gap-[5vw] md:items-end items-center fixed">
+            <div class=" imgs flex md:justify-around md:items-end md:w-[35%] sm:w-[60%] w-[85%]">
+                <div class="logo flex justify-end items-end">
+                    <img src="icons/logo.png" alt="" class="xl:h-[3rem] sm:h-[2.5rem] h-[2rem] xl:w-[5rem] sm:w-[4rem] w-[3rem] ">
+                    <h2 class="xl:text-[34px] sm:text-[28px] text-[19px] font-[700] w-[80%] pl-[10px] leading-[2.5rem]"><span class="text-[#A4BC46]">GenZ</span> <span class="text-[#3E3E3E]">Fashion</span> </h2>
+                </div>
+                <div class="w-[30%] lg:block hidden">
+                    <img src="images/nav-dots.png" alt="" class="w-[100%] h-[19%] pb-[0.42rem]">
+                </div>
+            </div>
+
+            <!-- NAV-BAR using chacked input -->
+            <!-- https://www.youtube.com/watch?v=MWv5IWyjiuI -->
+
+            <input type="checkbox" id="active-menu" class="peer hidden">
+            <label for="active-menu" class="cursor-pointer">
+                <img src="icons/menu-var.svg" alt="" class="md:hidden flex sm:h-[3rem] sm:w-[3rem] h-[2.4rem] w-[2.4rem]">
+            </label>
+            <div class="menu peer-checked:block lg:w-[43%] md:w-[53%] w-[85vw] md:flex hidden md:static absolute top-[0rem] left-[15%] md:h-auto h-[100vh] md:pt-0 pt-[8rem] md:text-[21px] text-[26px] md:leading-[2.5rem] leading-[7.5rem] text-center md:bg-transparent bg-[#363958] justify-around font-semibold md:text-[#3E3E3E] text-[white] list-none roboto-regular">
+                <label for="active-menu" class="cursor-pointer">
+                    <i name="close" class="fa-solid fa-xmark text-[2.5rem] text-[white] md:hidden absolute right-[2.5rem] top-[2rem]"></i>
+                </label>
+                <li class="md:hover:bg-transparent hover:bg-[#FABE4C] cursor-pointer"><a class="md:hover:text-[#FABE4C]">Home</a></li>
+                <li class="md:hover:bg-transparent hover:bg-[#FABE4C] cursor-pointer"><a class="md:hover:text-[#FABE4C]">Product</a></li>
+                <li class="md:hover:bg-transparent hover:bg-[#FABE4C] cursor-pointer"><a class="md:hover:text-[#FABE4C]">About us</a></li>
+                <li class="md:hover:bg-transparent hover:bg-[#FABE4C] cursor-pointer"><a class="md:hover:text-[#FABE4C]">Contact us</a></li>
+            </div>
+        </nav>
+
+        <div class="banner bg-[#FFFBF0] flex justify-center items-center w-[100%] pt-[10rem] pb-[2rem]" >
+            <div class="container flex lg:flex-row flex-col lg:justify-between justify-center items-center w-[86%]">
+                <div class="lft flex-col justify-start items-start lg:w-[50%] w-[80%]">
+                    <h1 class="bebas-neue-regular md:text-[80px] sm:text-[70px] text-[56px] md:leading-[6.5rem] sm:leading-[5rem] leading-[4rem] tracking-tighter w-[100%]"> <span class="text-[#FABE4C]">BE THE GENZS</span> <br> <span class="text-[#363958]">OF WINTER</span></h1>
+                    <p class="md:text-[22px] text-[18px] font-medium text-[#3E3E3E] lg:w-[75%] w-[85%] pb-[1.5rem]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <button class="flex justify-center items-center rounded-lg sm:gap-[0.7rem] gap-[0.3rem] xl:w-[31%] sm:w-[39%] w-[46%] sm:h-[78px] h-[65px] bg-gradient-to-tr from-[#85A019] to-[#A4BC46] ">
+                        <img src="icons/shopping-cart 1.png" alt="" class="sm:w-[32px] w-[28px] sm:h-[32px] h-[28px]">
+                        <p class="text-[white] font-medium sm:text-[21px] text-[14px]">BUY NOW</p>
+                    </button>
+                </div>
+                <div class="rght lg:w-[45%] w-[80%] flex justify-center items-center">
+                    <img src="images/model.png" alt="" class="w-[92%] mt-[-10%]">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="women w-[100%] flex justify-center md:py-[4%] py-[7rem]">
+            <div class="wo-con w-[80%]">
+                <h1 class="pb-[2rem] md:text-left text-center md:text-[48px] text-[39px] text-[#363958] bebas-neue-regular leading-[6.5rem] tracking-tighter">W0MAN JACKET</h1>
+                <div class="grid justify-items-center grid-cols-1 md:grid-cols-3 md:gap-x-[2%] gap-[2%] w-[100%]">
+                    <div class="g1 py-[20px] flex gap-[2%] flex-col justify-center items-center w-[98%] rounded-[20px] shadow-[0_15px_60px_-15px_rgba(0,0,0,0.3)]">
+                        <div class="im w-[90%] h-[60%] py-[10%] flex justify-center items-center rounded-[20px] bg-[#F1F1F1]">
+                            <img src="images/jacket-1.png" alt="" class="w-[70%] ">
+                        </div>
+                        <div class="btm w-[90%]">
+                            <h2 class="text-[#363958] text-[32px] lg:text-[32px] md:text-[30px] font-bold roboto-regular py-[1rem] w-[100%]">Yellow Coat Jacket</h2>
+                            <p class="text-[22px] xl:text-[22px] md:text-[20px] pb-[1rem] w-[96%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="ftr flex justify-between w-[100%]">
+                                <h1 class="lg:text-[46px] md:text-[35px] sm:text-[46px] text-[36px] font-bold text-[#FABE4C] ">$234</h1>
+                                <button class="flex justify-center items-center rounded-lg w-[52%] sm:h-[78px] h-[66px] bg-gradient-to-tr from-[#85A019] to-[#A4BC46] ">
+                                    <img src="icons/shopping-cart 1.png" alt="" class="w-[32px] h-[32px]">
+                                    <p class="text-[white] font-medium xl:text-[21px] md:text-[15px] sm:text-[21px] text-[15px] w-[60%]">BUY NOW</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g2 py-[20px] flex gap-[2%] flex-col justify-center items-center w-[98%] rounded-[20px] shadow-[0_15px_60px_-15px_rgba(0,0,0,0.3)]">
+                        <div class="im w-[90%] h-[60%] py-[10%] flex justify-center items-center rounded-[20px] bg-[#F1F1F1]">
+                            <img src="images/jacket-2.png" alt="" class="w-[70%] ">
+                        </div>
+                        <div class="btm w-[90%]">
+                            <h2 class="text-[#363958] text-[32px] lg:text-[32px] md:text-[30px] font-bold roboto-regular py-[1rem] w-[100%]">Ladies Jacket</h2>
+                            <p class="text-[22px] xl:text-[22px] md:text-[20px] pb-[1rem] w-[96%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="ftr flex justify-between w-[100%]">
+                                <h1 class="lg:text-[46px] md:text-[35px] sm:text-[46px] text-[36px] font-bold text-[#FABE4C] ">$234</h1>
+                                <button class="flex justify-center items-center rounded-lg w-[52%] sm:h-[78px] h-[66px] bg-gradient-to-tr from-[#85A019] to-[#A4BC46] ">
+                                    <img src="icons/shopping-cart 1.png" alt="" class="w-[32px] h-[32px]">
+                                    <p class="text-[white] font-medium xl:text-[21px] md:text-[15px] sm:text-[21px] text-[15px] w-[60%]">BUY NOW</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g3 py-[20px] flex gap-[2%] flex-col justify-center items-center w-[98%] rounded-[20px] shadow-[0_15px_60px_-15px_rgba(0,0,0,0.3)]">
+                        <div class="im w-[90%] h-[60%] py-[10%] flex justify-center items-center rounded-[20px] bg-[#F1F1F1]">
+                            <img src="images/jacket-3.png" alt="" class="w-[70%]">
+                        </div>
+                        <div class="btm w-[90%]">
+                            <h2 class="text-[#363958] text-[32px] lg:text-[32px] md:text-[30px] font-bold roboto-regular py-[1rem] w-[100%]">Woman Leather Jacket</h2>
+                            <p class="text-[22px] xl:text-[22px] md:text-[20px] pb-[1rem] w-[96%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="ftr flex justify-between w-[100%]">
+                                <h1 class="lg:text-[46px] md:text-[35px] sm:text-[46px] text-[36px] font-bold text-[#FABE4C] ">$234</h1>
+                                <button class="flex justify-center items-center rounded-lg w-[52%] sm:h-[78px] h-[66px] bg-gradient-to-tr from-[#85A019] to-[#A4BC46] ">
+                                    <img src="icons/shopping-cart 1.png" alt="" class="w-[32px] h-[32px]">
+                                    <p class="text-[white] font-medium xl:text-[21px] md:text-[15px] sm:text-[21px] text-[15px] w-[60%]">BUY NOW</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="men w-[100%] flex justify-center md:py-[4%] py-[7rem]">
+            <div class="wo-con w-[80%]">
+                <h1 class="pb-[2rem] md:text-left text-center md:text-[48px] text-[39px] text-[#363958] bebas-neue-regular leading-[6.5rem] tracking-tighter">MAN JACKET</h1>
+                <div class="grid justify-items-center grid-cols-1 md:grid-cols-3 md:gap-x-[2%] gap-[2%] w-[100%]">
+                    <div class="g1 py-[20px] flex gap-[2%] flex-col justify-center items-center w-[98%] rounded-[20px] shadow-[0_15px_60px_-15px_rgba(0,0,0,0.3)]">
+                        <div class="im w-[90%] h-[60%] py-[10%] flex justify-center items-center rounded-[20px] bg-[#F1F1F1]">
+                            <img src="images/jacket-4.png" alt="" class="w-[76%]">
+                        </div>
+                        <div class="btm w-[90%]">
+                            <h2 class="text-[#363958] text-[32px] lg:text-[32px] md:text-[30px] font-bold roboto-regular py-[1rem] w-[100%]">Snowboard Jacket Mens</h2>
+                            <p class="text-[22px] xl:text-[22px] md:text-[20px] pb-[1rem] w-[96%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="ftr flex justify-between w-[100%]">
+                                <h1 class="lg:text-[46px] md:text-[35px] sm:text-[46px] text-[36px] font-bold text-[#FABE4C] ">$234</h1>
+                                <button class="flex justify-center items-center rounded-lg w-[52%] sm:h-[78px] h-[66px] bg-gradient-to-tr from-[#85A019] to-[#A4BC46] ">
+                                    <img src="icons/shopping-cart 1.png" alt="" class="w-[32px] h-[32px]">
+                                    <p class="text-[white] font-medium xl:text-[21px] md:text-[15px] sm:text-[21px] text-[15px] w-[60%]">BUY NOW</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g2 py-[20px] flex gap-[2%] flex-col justify-center items-center w-[98%] rounded-[20px] shadow-[0_15px_60px_-15px_rgba(0,0,0,0.3)]">
+                        <div class="im w-[90%] h-[60%] py-[10%] flex justify-center items-center rounded-[20px] bg-[#F1F1F1]">
+                            <img src="images/jacket-5.png" alt="" class="w-[76%]">
+                        </div>
+                        <div class="btm w-[90%]">
+                            <h2 class="text-[#363958] text-[32px] lg:text-[32px] md:text-[30px] font-bold roboto-regular py-[1rem] w-[100%]">Man Leather Jackets</h2>
+                            <p class="text-[22px] xl:text-[22px] md:text-[20px] pb-[1rem] w-[96%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="ftr flex justify-between w-[100%]">
+                                <h1 class="lg:text-[46px] md:text-[35px] sm:text-[46px] text-[36px] font-bold text-[#FABE4C] ">$234</h1>
+                                <button class="flex justify-center items-center rounded-lg w-[52%] sm:h-[78px] h-[66px] bg-gradient-to-tr from-[#85A019] to-[#A4BC46] ">
+                                    <img src="icons/shopping-cart 1.png" alt="" class="w-[32px] h-[32px]">
+                                    <p class="text-[white] font-medium xl:text-[21px] md:text-[15px] sm:text-[21px] text-[15px] w-[60%]">BUY NOW</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="g3 py-[20px] flex gap-[2%] flex-col justify-center items-center w-[98%] rounded-[20px] shadow-[0_15px_60px_-15px_rgba(0,0,0,0.3)]">
+                        <div class="im w-[90%] h-[60%] py-[10%] flex justify-center items-center rounded-[20px] bg-[#F1F1F1]">
+                            <img src="images/jacket-6.png" alt="" class="w-[76%]">
+                        </div>
+                        <div class="btm w-[90%]">
+                            <h2 class="text-[#363958] text-[32px] lg:text-[32px] md:text-[30px] font-bold roboto-regular py-[1rem] w-[100%]">Man Casual Jackets</h2>
+                            <p class="text-[22px] xl:text-[22px] md:text-[20px] pb-[1rem] w-[96%]">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="ftr flex justify-between w-[100%]">
+                                <h1 class="lg:text-[46px] md:text-[35px] sm:text-[46px] text-[36px] font-bold text-[#FABE4C] ">$234</h1>
+                                <button class="flex justify-center items-center rounded-lg w-[52%] sm:h-[78px] h-[66px] bg-gradient-to-tr from-[#85A019] to-[#A4BC46] ">
+                                    <img src="icons/shopping-cart 1.png" alt="" class="w-[32px] h-[32px]">
+                                    <p class="text-[white] font-medium xl:text-[21px] md:text-[15px] sm:text-[21px] text-[15px] w-[60%]">BUY NOW</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="flex justify-center items-center lg:py-[6%] py-[15%]">
+        <div class="f-con flex lg:flex-row flex-col-reverse justify-between items-center lg:gap-[6.5%] gap-[5rem] w-[81%]">
+            <div class="l flex flex-col gap-[2.5rem] lg:w-[55%] w-[92%]">
+                <div class="flex md:flex-row flex-col md:justify-start justify-center items-center md:gap-[2.5rem] gap-[1rem] w-[100%] py-[2rem] shadow-[2px_8px_12px_#d1cfcf] pl-[2rem] rounded-[20px]">
+                    <img src="icons/house.png" alt="" class="md:w-[7rem] w-[5rem] md:h-[7rem] h-[5rem] mt-[10px]">
+                    <div class="md:w-[70%] w-[80%] md:pr-[10px]">
+                        <h2 class="text-[32px] font-bold text-[#363958] w-[95%] pb-[1rem] md:text-left text-center">Find the Perfect Fit</h2>
+                        <p class="md:text-[22px] text-[18px] w-[95%] md:text-left text-center">Everybody is different, which is why we offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col md:justify-start justify-center items-center md:gap-[2.5rem] gap-[1rem] w-[100%] py-[2rem] shadow-[2px_8px_12px_#d1cfcf] pl-[2rem] rounded-[20px]">
+                    <img src="icons/box.png" alt="" class="md:w-[7rem] w-[5rem] md:h-[7rem] h-[5rem] mt-[10px]">
+                    <div class="md:w-[70%] w-[80%] md:pr-[10px]">
+                        <h2 class="text-[32px] font-bold text-[#363958] w-[95%] pb-[1rem] md:text-left text-center">Free Exchanges</h2>
+                        <p class="md:text-[22px] text-[18px] w-[95%] md:text-left text-center">One of the many reasons you can shop with peace of mind.</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-row flex-col md:justify-start justify-center items-center md:gap-[2.5rem] gap-[1rem] w-[100%] py-[2rem] shadow-[2px_8px_12px_#d1cfcf] pl-[2rem] rounded-[20px]">
+                    <img src="icons/question.png" alt="" class="md:w-[7rem] w-[5rem] md:h-[7rem] h-[5rem] mt-[10px]">
+                    <div class="md:w-[70%] w-[80%] md:pr-[10px]">
+                        <h2 class="text-[32px] font-bold text-[#363958] w-[95%] pb-[1rem] md:text-left text-center">Contact Our Seller</h2>
+                        <p class="md:text-[22px] text-[18px] w-[95%] md:text-left text-center">They are here to help you. That's quite literally what we pay them for.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="r lg:w-[70%] w-[78%] ">
+                <img src="images/shopping.png" alt="" class="w-[100%]">
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
